@@ -64,24 +64,29 @@
   &:last-of-type {
     margin-bottom: 0;
   }
-}
-.panel-info {
-  border: none;
+  &-info {
+    border: none;
+    > .panel-heading {
+      color: $color-white;
+      background-color: $color-accent;
+      border: none;
+      font-size: 1.25rem;
+      letter-spacing: 0.08em;
+    }
+  }
+  &-body {
+    border: 1px solid $color-gray;
+    border-radius: 0 0 4px 4 px;
+  }
 }
 
-.panel-info>.panel-heading {
-  color: $color-white;
-  background-color: $color-accent;
-  border: none;
-  font-size: 1.25rem;
-  letter-spacing: 0.08em;
-}
-.panel-body {
-  border: 1px solid $color-gray;
-  border-radius: 0 0 4px 4 px;
+.input {
+  &-lg,
+  &-group-lg > .form-control {
+    font-size: 0.875rem;
+  }
 }
 
-.input-group-lg > .form-control {
-  font-size: 0.875rem;
-  
+.thumbnail {
+  transition: background-color 0.5s;
 }
