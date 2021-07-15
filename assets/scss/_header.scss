@@ -1,5 +1,5 @@
 .header {
-margin-bottom: $gap * 5.333333333;
+@extend %margin-bottom-lg;
 }
 .header-logo {
   padding: 100px 0;
@@ -21,7 +21,6 @@ margin-bottom: $gap * 5.333333333;
     @include xs {
       font-size: 2.5rem;
     }
-    
   }
   &__description {
     display: block;

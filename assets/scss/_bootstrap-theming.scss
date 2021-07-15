@@ -25,7 +25,6 @@
     }
   }
 }
-
 .navbar-left {
   @include sm-min {
     > li {
@@ -36,7 +35,6 @@
     margin-bottom: 0;
   }
 }
-
 .navbar-right {
   @include sm-min {
     > li {
@@ -55,9 +53,8 @@
   float: none;
   margin-right: 0;
 }
-
 .panel {
-  background-color: darken($color-white, 7%);
+  background-color: #f4f4f4;
   &:not(:last-of-type) {
     margin-bottom: $gap * 2;
   }
@@ -76,17 +73,15 @@
   }
   &-body {
     border: 1px solid $color-gray;
-    border-radius: 0 0 4px 4 px;
+    border-radius: 0 0 4px 4px;
   }
 }
-
 .input {
   &-lg,
   &-group-lg > .form-control {
     font-size: 0.875rem;
   }
 }
-
 .thumbnail {
   transition: background-color 0.5s;
 }
